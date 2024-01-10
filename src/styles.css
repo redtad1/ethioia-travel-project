@@ -11,7 +11,7 @@ header {
       rgba(129, 123, 123, 0.653),
       rgba(0, 0, 0, 0.6)
     ),
-    url("../img/moro-1.jpeg");
+    url("../img/moro-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -57,9 +57,88 @@ header a {
 main {
   background-color: aliceblue;
 }
-.img-responsive {
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+.text-center {
+  font-size: 25px;
+  font-family: monospace;
+  text-align: center;
+}
+.img-resp {
   width: 100%;
   display: block;
+}
+.img-moro {
+  width: 100%;
+  display: block;
+}
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.card {
+  background: white;
+  margin: 10px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+
+  background-color: rgb(103, 215, 238);
+
+  text-decoration: none;
 }
 
 section {
@@ -67,12 +146,8 @@ section {
   margin: 0 auto;
   padding: 100px;
 }
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
 section {
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 100px;
 }
@@ -87,14 +162,12 @@ footer {
     rgba(102, 160, 129, 0.9),
     rgba(155, 250, 196, 0.9)
   );
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 footer h3 {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 25px;
+  line-height: 20px;
 }
 
 footer p {
