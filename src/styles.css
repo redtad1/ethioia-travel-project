@@ -11,7 +11,7 @@ header {
       rgba(129, 123, 123, 0.653),
       rgba(0, 0, 0, 0.6)
     ),
-    url("../img/moro-1.jpg");
+    url("../img/moro-6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -90,6 +90,7 @@ main p {
 .img-resp {
   width: 100%;
   display: block;
+  object-fit: cover;
 }
 .img-moro {
   width: 100%;
@@ -142,18 +143,13 @@ main p {
 }
 
 section {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 100px;
-}
-section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px;
 }
 
 section.secondary {
-  background: #dfe4e9;
+  background-color: rgba(245, 245, 220, 0.609);
 }
 
 footer {
@@ -190,4 +186,34 @@ footer li {
 footer a {
   color: rgb(16, 31, 189);
   opacity: 0.7;
+}
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
 }
