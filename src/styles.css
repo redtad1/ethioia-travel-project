@@ -131,6 +131,9 @@ main p {
 .card-footer {
   padding: 0 30px 30px;
 }
+.instagram {
+  text-align: center;
+}
 
 .btn {
   display: block;
