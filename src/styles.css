@@ -89,8 +89,10 @@ main p {
 }
 .img-resp {
   width: 100%;
-  display: block;
+  max-height: 120px;
+  min-width: 150px;
   object-fit: cover;
+  display: block;
 }
 .img-moro {
   width: 100%;
@@ -187,6 +189,7 @@ footer a {
   color: rgb(16, 31, 189);
   opacity: 0.7;
 }
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
